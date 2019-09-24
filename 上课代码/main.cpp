@@ -1,15 +1,15 @@
-//
-//  main.cpp
-//  上课代码
-//
-//  Created by s20181102931 on 2019/9/24.
-//  Copyright © 2019 s20181102931. All rights reserved.
-//
-
-#include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+#include<stdio.h>
+#include"stdlib.h"
+int main()
+{
+    static signed int i=0xAABBCCDD;
+    char *p;
+    int j=10;
+    p =(char*)&i;
+    printf("p=%x\n",p);
+    printf("&i=%x\n",&i);
+    printf("*(p+3)=%x\n",*(p+3));
+    printf("*p=%x\n",*p);
     return 0;
 }
+
